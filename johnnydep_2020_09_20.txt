@@ -1,0 +1,935 @@
+name                                                                      summary
+------------------------------------------------------------------------  -------------------------------------------------------------------------------------------------------------
+pycaret                                                                   PyCaret - An open source, low-code machine learning library in Python.
+├── Boruta                                                                Python Implementation of Boruta Feature Selection
+│   ├── numpy>=1.10.4                                                     NumPy is the fundamental package for array computing with Python.
+│   ├── scikit-learn>=0.17.1                                              A set of python modules for machine learning and data mining
+│   │   ├── joblib>=0.11                                                  Lightweight pipelining with Python functions
+│   │   ├── numpy>=1.13.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── scipy>=0.19.1                                                 SciPy: Scientific Library for Python
+│   │   │   └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+│   │   └── threadpoolctl>=2.0.0                                          threadpoolctl
+│   └── scipy>=0.17.0                                                     SciPy: Scientific Library for Python
+│       └── numpy<1.23.0,>=1.16.5                                         NumPy is the fundamental package for array computing with Python.
+├── IPython                                                               IPython: Productive Interactive Computing
+│   ├── appnope                                                           Disable App Nap on macOS >= 10.9
+│   ├── backcall                                                          Specifications for callback functions passed in to an API
+│   ├── decorator                                                         Decorators for Humans
+│   ├── jedi>=0.16                                                        An autocompletion tool for Python that can be used for text editors.
+│   │   └── parso<0.9.0,>=0.8.0                                           A Python Parser
+│   ├── matplotlib-inline                                                 Inline Matplotlib backend for Jupyter
+│   │   └── traitlets                                                     Traitlets Python configuration system
+│   ├── pexpect>4.3                                                       Pexpect allows easy control of interactive console applications.
+│   │   └── ptyprocess>=0.5                                               Run a subprocess in a pseudo terminal
+│   ├── pickleshare                                                       Tiny 'shelve'-like database with concurrency support
+│   ├── prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0                      Library for building powerful interactive command lines in Python
+│   │   └── wcwidth                                                       Measures the displayed width of unicode strings in a terminal
+│   ├── pygments                                                          Pygments is a syntax highlighting package written in Python.
+│   ├── setuptools>=18.5                                                  Easily download, build, install, upgrade, and uninstall Python packages
+│   └── traitlets>=4.2                                                    Traitlets Python configuration system
+├── cufflinks>=0.17.0                                                     Productivity Tools for Plotly + Pandas
+│   ├── colorlover>=0.2.1                                                 Color scales for IPython notebook
+│   ├── ipython>=5.3.0                                                    IPython: Productive Interactive Computing
+│   │   ├── appnope                                                       Disable App Nap on macOS >= 10.9
+│   │   ├── backcall                                                      Specifications for callback functions passed in to an API
+│   │   ├── decorator                                                     Decorators for Humans
+│   │   ├── jedi>=0.16                                                    An autocompletion tool for Python that can be used for text editors.
+│   │   │   └── parso<0.9.0,>=0.8.0                                       A Python Parser
+│   │   ├── matplotlib-inline                                             Inline Matplotlib backend for Jupyter
+│   │   │   └── traitlets                                                 Traitlets Python configuration system
+│   │   ├── pexpect>4.3                                                   Pexpect allows easy control of interactive console applications.
+│   │   │   └── ptyprocess>=0.5                                           Run a subprocess in a pseudo terminal
+│   │   ├── pickleshare                                                   Tiny 'shelve'-like database with concurrency support
+│   │   ├── prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0                  Library for building powerful interactive command lines in Python
+│   │   │   └── wcwidth                                                   Measures the displayed width of unicode strings in a terminal
+│   │   ├── pygments                                                      Pygments is a syntax highlighting package written in Python.
+│   │   ├── setuptools>=18.5                                              Easily download, build, install, upgrade, and uninstall Python packages
+│   │   └── traitlets>=4.2                                                Traitlets Python configuration system
+│   ├── ipywidgets>=7.0.0                                                 IPython HTML widgets for Jupyter
+│   │   ├── ipykernel>=4.5.1                                              IPython Kernel for Jupyter
+│   │   │   ├── appnope                                                   Disable App Nap on macOS >= 10.9
+│   │   │   ├── debugpy<2.0,>=1.0.0                                       An implementation of the Debug Adapter Protocol for Python
+│   │   │   ├── ipython-genutils                                          Vestigial utilities from IPython
+│   │   │   ├── ipython<8.0,>=7.23.1                                      IPython: Productive Interactive Computing
+│   │   │   │   ├── appnope                                               Disable App Nap on macOS >= 10.9
+│   │   │   │   ├── backcall                                              Specifications for callback functions passed in to an API
+│   │   │   │   ├── decorator                                             Decorators for Humans
+│   │   │   │   ├── jedi>=0.16                                            An autocompletion tool for Python that can be used for text editors.
+│   │   │   │   │   └── parso<0.9.0,>=0.8.0                               A Python Parser
+│   │   │   │   ├── matplotlib-inline                                     Inline Matplotlib backend for Jupyter
+│   │   │   │   │   └── traitlets                                         Traitlets Python configuration system
+│   │   │   │   ├── pexpect>4.3                                           Pexpect allows easy control of interactive console applications.
+│   │   │   │   │   └── ptyprocess>=0.5                                   Run a subprocess in a pseudo terminal
+│   │   │   │   ├── pickleshare                                           Tiny 'shelve'-like database with concurrency support
+│   │   │   │   ├── prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0          Library for building powerful interactive command lines in Python
+│   │   │   │   │   └── wcwidth                                           Measures the displayed width of unicode strings in a terminal
+│   │   │   │   ├── pygments                                              Pygments is a syntax highlighting package written in Python.
+│   │   │   │   ├── setuptools>=18.5                                      Easily download, build, install, upgrade, and uninstall Python packages
+│   │   │   │   └── traitlets>=4.2                                        Traitlets Python configuration system
+│   │   │   ├── jupyter-client<8.0                                        Jupyter protocol implementation and client libraries
+│   │   │   │   ├── entrypoints                                           Discover and load entry points from installed packages.
+│   │   │   │   ├── jupyter-core>=4.6.0                                   Jupyter core package. A base package on which Jupyter projects rely.
+│   │   │   │   │   └── traitlets                                         Traitlets Python configuration system
+│   │   │   │   ├── nest-asyncio>=1.5                                     Patch asyncio to allow nested event loops
+│   │   │   │   ├── python-dateutil>=2.1                                  Extensions to the standard Python datetime module
+│   │   │   │   │   └── six>=1.5                                          Python 2 and 3 compatibility utilities
+│   │   │   │   ├── pyzmq>=13                                             Python bindings for 0MQ
+│   │   │   │   ├── tornado>=4.1                                          Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│   │   │   │   └── traitlets                                             Traitlets Python configuration system
+│   │   │   ├── matplotlib-inline<0.2.0,>=0.1.0                           Inline Matplotlib backend for Jupyter
+│   │   │   │   └── traitlets                                             Traitlets Python configuration system
+│   │   │   ├── tornado<7.0,>=4.2                                         Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│   │   │   └── traitlets<6.0,>=4.1.0                                     Traitlets Python configuration system
+│   │   ├── ipython-genutils~=0.2.0                                       Vestigial utilities from IPython
+│   │   ├── ipython>=4.0.0                                                IPython: Productive Interactive Computing
+│   │   │   ├── appnope                                                   Disable App Nap on macOS >= 10.9
+│   │   │   ├── backcall                                                  Specifications for callback functions passed in to an API
+│   │   │   ├── decorator                                                 Decorators for Humans
+│   │   │   ├── jedi>=0.16                                                An autocompletion tool for Python that can be used for text editors.
+│   │   │   │   └── parso<0.9.0,>=0.8.0                                   A Python Parser
+│   │   │   ├── matplotlib-inline                                         Inline Matplotlib backend for Jupyter
+│   │   │   │   └── traitlets                                             Traitlets Python configuration system
+│   │   │   ├── pexpect>4.3                                               Pexpect allows easy control of interactive console applications.
+│   │   │   │   └── ptyprocess>=0.5                                       Run a subprocess in a pseudo terminal
+│   │   │   ├── pickleshare                                               Tiny 'shelve'-like database with concurrency support
+│   │   │   ├── prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0              Library for building powerful interactive command lines in Python
+│   │   │   │   └── wcwidth                                               Measures the displayed width of unicode strings in a terminal
+│   │   │   ├── pygments                                                  Pygments is a syntax highlighting package written in Python.
+│   │   │   ├── setuptools>=18.5                                          Easily download, build, install, upgrade, and uninstall Python packages
+│   │   │   └── traitlets>=4.2                                            Traitlets Python configuration system
+│   │   ├── jupyterlab-widgets>=1.0.0                                     A JupyterLab extension.
+│   │   ├── nbformat>=4.2.0                                               The Jupyter Notebook format
+│   │   │   ├── ipython-genutils                                          Vestigial utilities from IPython
+│   │   │   ├── jsonschema!=2.5.0,>=2.4                                   An implementation of JSON Schema validation for Python
+│   │   │   │   ├── attrs>=17.4.0                                         Classes Without Boilerplate
+│   │   │   │   ├── pyrsistent>=0.14.0                                    Persistent/Functional/Immutable data structures
+│   │   │   │   ├── setuptools                                            Easily download, build, install, upgrade, and uninstall Python packages
+│   │   │   │   └── six>=1.11.0                                           Python 2 and 3 compatibility utilities
+│   │   │   ├── jupyter-core                                              Jupyter core package. A base package on which Jupyter projects rely.
+│   │   │   │   └── traitlets                                             Traitlets Python configuration system
+│   │   │   └── traitlets>=4.1                                            Traitlets Python configuration system
+│   │   ├── traitlets>=4.3.1                                              Traitlets Python configuration system
+│   │   └── widgetsnbextension~=3.5.0                                     IPython HTML widgets for Jupyter
+│   │       └── notebook>=4.4.1                                           A web-based notebook environment for interactive computing
+│   │           ├── Send2Trash>=1.5.0                                     Send file to trash natively under Mac OS X, Windows and Linux.
+│   │           ├── argon2-cffi                                           The secure Argon2 password hashing algorithm.
+│   │           │   └── cffi>=1.0.0                                       Foreign Function Interface for Python calling C code.
+│   │           │       └── pycparser                                     C parser in Python
+│   │           ├── ipykernel                                             IPython Kernel for Jupyter
+│   │           │   ├── appnope                                           Disable App Nap on macOS >= 10.9
+│   │           │   ├── debugpy<2.0,>=1.0.0                               An implementation of the Debug Adapter Protocol for Python
+│   │           │   ├── ipython-genutils                                  Vestigial utilities from IPython
+│   │           │   ├── ipython<8.0,>=7.23.1                              IPython: Productive Interactive Computing
+│   │           │   │   ├── appnope                                       Disable App Nap on macOS >= 10.9
+│   │           │   │   ├── backcall                                      Specifications for callback functions passed in to an API
+│   │           │   │   ├── decorator                                     Decorators for Humans
+│   │           │   │   ├── jedi>=0.16                                    An autocompletion tool for Python that can be used for text editors.
+│   │           │   │   │   └── parso<0.9.0,>=0.8.0                       A Python Parser
+│   │           │   │   ├── matplotlib-inline                             Inline Matplotlib backend for Jupyter
+│   │           │   │   │   └── traitlets                                 Traitlets Python configuration system
+│   │           │   │   ├── pexpect>4.3                                   Pexpect allows easy control of interactive console applications.
+│   │           │   │   │   └── ptyprocess>=0.5                           Run a subprocess in a pseudo terminal
+│   │           │   │   ├── pickleshare                                   Tiny 'shelve'-like database with concurrency support
+│   │           │   │   ├── prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0  Library for building powerful interactive command lines in Python
+│   │           │   │   │   └── wcwidth                                   Measures the displayed width of unicode strings in a terminal
+│   │           │   │   ├── pygments                                      Pygments is a syntax highlighting package written in Python.
+│   │           │   │   ├── setuptools>=18.5                              Easily download, build, install, upgrade, and uninstall Python packages
+│   │           │   │   └── traitlets>=4.2                                Traitlets Python configuration system
+│   │           │   ├── jupyter-client<8.0                                Jupyter protocol implementation and client libraries
+│   │           │   │   ├── entrypoints                                   Discover and load entry points from installed packages.
+│   │           │   │   ├── jupyter-core>=4.6.0                           Jupyter core package. A base package on which Jupyter projects rely.
+│   │           │   │   │   └── traitlets                                 Traitlets Python configuration system
+│   │           │   │   ├── nest-asyncio>=1.5                             Patch asyncio to allow nested event loops
+│   │           │   │   ├── python-dateutil>=2.1                          Extensions to the standard Python datetime module
+│   │           │   │   │   └── six>=1.5                                  Python 2 and 3 compatibility utilities
+│   │           │   │   ├── pyzmq>=13                                     Python bindings for 0MQ
+│   │           │   │   ├── tornado>=4.1                                  Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│   │           │   │   └── traitlets                                     Traitlets Python configuration system
+│   │           │   ├── matplotlib-inline<0.2.0,>=0.1.0                   Inline Matplotlib backend for Jupyter
+│   │           │   │   └── traitlets                                     Traitlets Python configuration system
+│   │           │   ├── tornado<7.0,>=4.2                                 Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│   │           │   └── traitlets<6.0,>=4.1.0                             Traitlets Python configuration system
+│   │           ├── ipython-genutils                                      Vestigial utilities from IPython
+│   │           ├── jinja2                                                A very fast and expressive template engine.
+│   │           │   └── MarkupSafe>=2.0                                   Safely add untrusted strings to HTML/XML markup.
+│   │           ├── jupyter-client>=5.3.4                                 Jupyter protocol implementation and client libraries
+│   │           │   ├── entrypoints                                       Discover and load entry points from installed packages.
+│   │           │   ├── jupyter-core>=4.6.0                               Jupyter core package. A base package on which Jupyter projects rely.
+│   │           │   │   └── traitlets                                     Traitlets Python configuration system
+│   │           │   ├── nest-asyncio>=1.5                                 Patch asyncio to allow nested event loops
+│   │           │   ├── python-dateutil>=2.1                              Extensions to the standard Python datetime module
+│   │           │   │   └── six>=1.5                                      Python 2 and 3 compatibility utilities
+│   │           │   ├── pyzmq>=13                                         Python bindings for 0MQ
+│   │           │   ├── tornado>=4.1                                      Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│   │           │   └── traitlets                                         Traitlets Python configuration system
+│   │           ├── jupyter-core>=4.6.1                                   Jupyter core package. A base package on which Jupyter projects rely.
+│   │           │   └── traitlets                                         Traitlets Python configuration system
+│   │           ├── nbconvert                                             Converting Jupyter Notebooks
+│   │           │   ├── bleach                                            An easy safelist-based HTML-sanitizing tool.
+│   │           │   │   ├── packaging                                     Core utilities for Python packages
+│   │           │   │   │   └── pyparsing>=2.0.2                          Python parsing module
+│   │           │   │   ├── six>=1.9.0                                    Python 2 and 3 compatibility utilities
+│   │           │   │   └── webencodings                                  Character encoding aliases for legacy web content
+│   │           │   ├── defusedxml                                        XML bomb protection for Python stdlib modules
+│   │           │   ├── entrypoints>=0.2.2                                Discover and load entry points from installed packages.
+│   │           │   ├── jinja2>=2.4                                       A very fast and expressive template engine.
+│   │           │   │   └── MarkupSafe>=2.0                               Safely add untrusted strings to HTML/XML markup.
+│   │           │   ├── jupyter-core                                      Jupyter core package. A base package on which Jupyter projects rely.
+│   │           │   │   └── traitlets                                     Traitlets Python configuration system
+│   │           │   ├── jupyterlab-pygments                               Pygments theme using JupyterLab CSS variables
+│   │           │   │   └── pygments<3,>=2.4.1                            Pygments is a syntax highlighting package written in Python.
+│   │           │   ├── mistune<2,>=0.8.1                                 The fastest markdown parser in pure Python
+│   │           │   ├── nbclient<0.6.0,>=0.5.0                            A client library for executing notebooks. Formerly nbconvert's ExecutePreprocessor.
+│   │           │   │   ├── jupyter-client>=6.1.5                         Jupyter protocol implementation and client libraries
+│   │           │   │   │   ├── entrypoints                               Discover and load entry points from installed packages.
+│   │           │   │   │   ├── jupyter-core>=4.6.0                       Jupyter core package. A base package on which Jupyter projects rely.
+│   │           │   │   │   │   └── traitlets                             Traitlets Python configuration system
+│   │           │   │   │   ├── nest-asyncio>=1.5                         Patch asyncio to allow nested event loops
+│   │           │   │   │   ├── python-dateutil>=2.1                      Extensions to the standard Python datetime module
+│   │           │   │   │   │   └── six>=1.5                              Python 2 and 3 compatibility utilities
+│   │           │   │   │   ├── pyzmq>=13                                 Python bindings for 0MQ
+│   │           │   │   │   ├── tornado>=4.1                              Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│   │           │   │   │   └── traitlets                                 Traitlets Python configuration system
+│   │           │   │   ├── nbformat>=5.0                                 The Jupyter Notebook format
+│   │           │   │   │   ├── ipython-genutils                          Vestigial utilities from IPython
+│   │           │   │   │   ├── jsonschema!=2.5.0,>=2.4                   An implementation of JSON Schema validation for Python
+│   │           │   │   │   │   ├── attrs>=17.4.0                         Classes Without Boilerplate
+│   │           │   │   │   │   ├── pyrsistent>=0.14.0                    Persistent/Functional/Immutable data structures
+│   │           │   │   │   │   ├── setuptools                            Easily download, build, install, upgrade, and uninstall Python packages
+│   │           │   │   │   │   └── six>=1.11.0                           Python 2 and 3 compatibility utilities
+│   │           │   │   │   ├── jupyter-core                              Jupyter core package. A base package on which Jupyter projects rely.
+│   │           │   │   │   │   └── traitlets                             Traitlets Python configuration system
+│   │           │   │   │   └── traitlets>=4.1                            Traitlets Python configuration system
+│   │           │   │   ├── nest-asyncio                                  Patch asyncio to allow nested event loops
+│   │           │   │   └── traitlets>=4.2                                Traitlets Python configuration system
+│   │           │   ├── nbformat>=4.4                                     The Jupyter Notebook format
+│   │           │   │   ├── ipython-genutils                              Vestigial utilities from IPython
+│   │           │   │   ├── jsonschema!=2.5.0,>=2.4                       An implementation of JSON Schema validation for Python
+│   │           │   │   │   ├── attrs>=17.4.0                             Classes Without Boilerplate
+│   │           │   │   │   ├── pyrsistent>=0.14.0                        Persistent/Functional/Immutable data structures
+│   │           │   │   │   ├── setuptools                                Easily download, build, install, upgrade, and uninstall Python packages
+│   │           │   │   │   └── six>=1.11.0                               Python 2 and 3 compatibility utilities
+│   │           │   │   ├── jupyter-core                                  Jupyter core package. A base package on which Jupyter projects rely.
+│   │           │   │   │   └── traitlets                                 Traitlets Python configuration system
+│   │           │   │   └── traitlets>=4.1                                Traitlets Python configuration system
+│   │           │   ├── pandocfilters>=1.4.1                              Utilities for writing pandoc filters in python
+│   │           │   ├── pygments>=2.4.1                                   Pygments is a syntax highlighting package written in Python.
+│   │           │   ├── testpath                                          Test utilities for code working with files and commands
+│   │           │   └── traitlets>=5.0                                    Traitlets Python configuration system
+│   │           ├── nbformat                                              The Jupyter Notebook format
+│   │           │   ├── ipython-genutils                                  Vestigial utilities from IPython
+│   │           │   ├── jsonschema!=2.5.0,>=2.4                           An implementation of JSON Schema validation for Python
+│   │           │   │   ├── attrs>=17.4.0                                 Classes Without Boilerplate
+│   │           │   │   ├── pyrsistent>=0.14.0                            Persistent/Functional/Immutable data structures
+│   │           │   │   ├── setuptools                                    Easily download, build, install, upgrade, and uninstall Python packages
+│   │           │   │   └── six>=1.11.0                                   Python 2 and 3 compatibility utilities
+│   │           │   ├── jupyter-core                                      Jupyter core package. A base package on which Jupyter projects rely.
+│   │           │   │   └── traitlets                                     Traitlets Python configuration system
+│   │           │   └── traitlets>=4.1                                    Traitlets Python configuration system
+│   │           ├── prometheus-client                                     Python client for the Prometheus monitoring system.
+│   │           ├── pyzmq>=17                                             Python bindings for 0MQ
+│   │           ├── terminado>=0.8.3                                      Tornado websocket backend for the Xterm.js Javascript terminal emulator library.
+│   │           │   ├── ptyprocess                                        Run a subprocess in a pseudo terminal
+│   │           │   └── tornado>=4                                        Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│   │           ├── tornado>=6.1                                          Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│   │           └── traitlets>=4.2.1                                      Traitlets Python configuration system
+│   ├── numpy>=1.9.2                                                      NumPy is the fundamental package for array computing with Python.
+│   ├── pandas>=0.19.2                                                    Powerful data structures for data analysis, time series, and statistics
+│   │   ├── numpy>=1.17.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── python-dateutil>=2.7.3                                        Extensions to the standard Python datetime module
+│   │   │   └── six>=1.5                                                  Python 2 and 3 compatibility utilities
+│   │   └── pytz>=2017.3                                                  World timezone definitions, modern and historical
+│   ├── plotly>=4.1.1                                                     An open-source, interactive data visualization library for Python
+│   │   ├── six                                                           Python 2 and 3 compatibility utilities
+│   │   └── tenacity>=6.2.0                                               Retry code until it succeeds
+│   ├── setuptools>=34.4.1                                                Easily download, build, install, upgrade, and uninstall Python packages
+│   └── six>=1.9.0                                                        Python 2 and 3 compatibility utilities
+├── gensim<4.0.0                                                          Python framework for fast Vector Space Modelling
+│   ├── numpy>=1.11.3                                                     NumPy is the fundamental package for array computing with Python.
+│   ├── scipy>=0.18.1                                                     SciPy: Scientific Library for Python
+│   │   └── numpy<1.23.0,>=1.16.5                                         NumPy is the fundamental package for array computing with Python.
+│   ├── six>=1.5.0                                                        Python 2 and 3 compatibility utilities
+│   └── smart-open>=1.8.1                                                 Utils for streaming large files (S3, HDFS, GCS, Azure Blob Storage, gzip, bz2...)
+├── imbalanced-learn==0.7.0                                               Toolbox for imbalanced dataset in machine learning.
+│   ├── joblib>=0.11                                                      Lightweight pipelining with Python functions
+│   ├── numpy>=1.13.3                                                     NumPy is the fundamental package for array computing with Python.
+│   ├── scikit-learn>=0.23                                                A set of python modules for machine learning and data mining
+│   │   ├── joblib>=0.11                                                  Lightweight pipelining with Python functions
+│   │   ├── numpy>=1.13.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── scipy>=0.19.1                                                 SciPy: Scientific Library for Python
+│   │   │   └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+│   │   └── threadpoolctl>=2.0.0                                          threadpoolctl
+│   └── scipy>=0.19.1                                                     SciPy: Scientific Library for Python
+│       └── numpy<1.23.0,>=1.16.5                                         NumPy is the fundamental package for array computing with Python.
+├── ipywidgets                                                            IPython HTML widgets for Jupyter
+│   ├── ipykernel>=4.5.1                                                  IPython Kernel for Jupyter
+│   │   ├── appnope                                                       Disable App Nap on macOS >= 10.9
+│   │   ├── debugpy<2.0,>=1.0.0                                           An implementation of the Debug Adapter Protocol for Python
+│   │   ├── ipython-genutils                                              Vestigial utilities from IPython
+│   │   ├── ipython<8.0,>=7.23.1                                          IPython: Productive Interactive Computing
+│   │   │   ├── appnope                                                   Disable App Nap on macOS >= 10.9
+│   │   │   ├── backcall                                                  Specifications for callback functions passed in to an API
+│   │   │   ├── decorator                                                 Decorators for Humans
+│   │   │   ├── jedi>=0.16                                                An autocompletion tool for Python that can be used for text editors.
+│   │   │   │   └── parso<0.9.0,>=0.8.0                                   A Python Parser
+│   │   │   ├── matplotlib-inline                                         Inline Matplotlib backend for Jupyter
+│   │   │   │   └── traitlets                                             Traitlets Python configuration system
+│   │   │   ├── pexpect>4.3                                               Pexpect allows easy control of interactive console applications.
+│   │   │   │   └── ptyprocess>=0.5                                       Run a subprocess in a pseudo terminal
+│   │   │   ├── pickleshare                                               Tiny 'shelve'-like database with concurrency support
+│   │   │   ├── prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0              Library for building powerful interactive command lines in Python
+│   │   │   │   └── wcwidth                                               Measures the displayed width of unicode strings in a terminal
+│   │   │   ├── pygments                                                  Pygments is a syntax highlighting package written in Python.
+│   │   │   ├── setuptools>=18.5                                          Easily download, build, install, upgrade, and uninstall Python packages
+│   │   │   └── traitlets>=4.2                                            Traitlets Python configuration system
+│   │   ├── jupyter-client<8.0                                            Jupyter protocol implementation and client libraries
+│   │   │   ├── entrypoints                                               Discover and load entry points from installed packages.
+│   │   │   ├── jupyter-core>=4.6.0                                       Jupyter core package. A base package on which Jupyter projects rely.
+│   │   │   │   └── traitlets                                             Traitlets Python configuration system
+│   │   │   ├── nest-asyncio>=1.5                                         Patch asyncio to allow nested event loops
+│   │   │   ├── python-dateutil>=2.1                                      Extensions to the standard Python datetime module
+│   │   │   │   └── six>=1.5                                              Python 2 and 3 compatibility utilities
+│   │   │   ├── pyzmq>=13                                                 Python bindings for 0MQ
+│   │   │   ├── tornado>=4.1                                              Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│   │   │   └── traitlets                                                 Traitlets Python configuration system
+│   │   ├── matplotlib-inline<0.2.0,>=0.1.0                               Inline Matplotlib backend for Jupyter
+│   │   │   └── traitlets                                                 Traitlets Python configuration system
+│   │   ├── tornado<7.0,>=4.2                                             Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│   │   └── traitlets<6.0,>=4.1.0                                         Traitlets Python configuration system
+│   ├── ipython-genutils~=0.2.0                                           Vestigial utilities from IPython
+│   ├── ipython>=4.0.0                                                    IPython: Productive Interactive Computing
+│   │   ├── appnope                                                       Disable App Nap on macOS >= 10.9
+│   │   ├── backcall                                                      Specifications for callback functions passed in to an API
+│   │   ├── decorator                                                     Decorators for Humans
+│   │   ├── jedi>=0.16                                                    An autocompletion tool for Python that can be used for text editors.
+│   │   │   └── parso<0.9.0,>=0.8.0                                       A Python Parser
+│   │   ├── matplotlib-inline                                             Inline Matplotlib backend for Jupyter
+│   │   │   └── traitlets                                                 Traitlets Python configuration system
+│   │   ├── pexpect>4.3                                                   Pexpect allows easy control of interactive console applications.
+│   │   │   └── ptyprocess>=0.5                                           Run a subprocess in a pseudo terminal
+│   │   ├── pickleshare                                                   Tiny 'shelve'-like database with concurrency support
+│   │   ├── prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0                  Library for building powerful interactive command lines in Python
+│   │   │   └── wcwidth                                                   Measures the displayed width of unicode strings in a terminal
+│   │   ├── pygments                                                      Pygments is a syntax highlighting package written in Python.
+│   │   ├── setuptools>=18.5                                              Easily download, build, install, upgrade, and uninstall Python packages
+│   │   └── traitlets>=4.2                                                Traitlets Python configuration system
+│   ├── jupyterlab-widgets>=1.0.0                                         A JupyterLab extension.
+│   ├── nbformat>=4.2.0                                                   The Jupyter Notebook format
+│   │   ├── ipython-genutils                                              Vestigial utilities from IPython
+│   │   ├── jsonschema!=2.5.0,>=2.4                                       An implementation of JSON Schema validation for Python
+│   │   │   ├── attrs>=17.4.0                                             Classes Without Boilerplate
+│   │   │   ├── pyrsistent>=0.14.0                                        Persistent/Functional/Immutable data structures
+│   │   │   ├── setuptools                                                Easily download, build, install, upgrade, and uninstall Python packages
+│   │   │   └── six>=1.11.0                                               Python 2 and 3 compatibility utilities
+│   │   ├── jupyter-core                                                  Jupyter core package. A base package on which Jupyter projects rely.
+│   │   │   └── traitlets                                                 Traitlets Python configuration system
+│   │   └── traitlets>=4.1                                                Traitlets Python configuration system
+│   ├── traitlets>=4.3.1                                                  Traitlets Python configuration system
+│   └── widgetsnbextension~=3.5.0                                         IPython HTML widgets for Jupyter
+│       └── notebook>=4.4.1                                               A web-based notebook environment for interactive computing
+│           ├── Send2Trash>=1.5.0                                         Send file to trash natively under Mac OS X, Windows and Linux.
+│           ├── argon2-cffi                                               The secure Argon2 password hashing algorithm.
+│           │   └── cffi>=1.0.0                                           Foreign Function Interface for Python calling C code.
+│           │       └── pycparser                                         C parser in Python
+│           ├── ipykernel                                                 IPython Kernel for Jupyter
+│           │   ├── appnope                                               Disable App Nap on macOS >= 10.9
+│           │   ├── debugpy<2.0,>=1.0.0                                   An implementation of the Debug Adapter Protocol for Python
+│           │   ├── ipython-genutils                                      Vestigial utilities from IPython
+│           │   ├── ipython<8.0,>=7.23.1                                  IPython: Productive Interactive Computing
+│           │   │   ├── appnope                                           Disable App Nap on macOS >= 10.9
+│           │   │   ├── backcall                                          Specifications for callback functions passed in to an API
+│           │   │   ├── decorator                                         Decorators for Humans
+│           │   │   ├── jedi>=0.16                                        An autocompletion tool for Python that can be used for text editors.
+│           │   │   │   └── parso<0.9.0,>=0.8.0                           A Python Parser
+│           │   │   ├── matplotlib-inline                                 Inline Matplotlib backend for Jupyter
+│           │   │   │   └── traitlets                                     Traitlets Python configuration system
+│           │   │   ├── pexpect>4.3                                       Pexpect allows easy control of interactive console applications.
+│           │   │   │   └── ptyprocess>=0.5                               Run a subprocess in a pseudo terminal
+│           │   │   ├── pickleshare                                       Tiny 'shelve'-like database with concurrency support
+│           │   │   ├── prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0      Library for building powerful interactive command lines in Python
+│           │   │   │   └── wcwidth                                       Measures the displayed width of unicode strings in a terminal
+│           │   │   ├── pygments                                          Pygments is a syntax highlighting package written in Python.
+│           │   │   ├── setuptools>=18.5                                  Easily download, build, install, upgrade, and uninstall Python packages
+│           │   │   └── traitlets>=4.2                                    Traitlets Python configuration system
+│           │   ├── jupyter-client<8.0                                    Jupyter protocol implementation and client libraries
+│           │   │   ├── entrypoints                                       Discover and load entry points from installed packages.
+│           │   │   ├── jupyter-core>=4.6.0                               Jupyter core package. A base package on which Jupyter projects rely.
+│           │   │   │   └── traitlets                                     Traitlets Python configuration system
+│           │   │   ├── nest-asyncio>=1.5                                 Patch asyncio to allow nested event loops
+│           │   │   ├── python-dateutil>=2.1                              Extensions to the standard Python datetime module
+│           │   │   │   └── six>=1.5                                      Python 2 and 3 compatibility utilities
+│           │   │   ├── pyzmq>=13                                         Python bindings for 0MQ
+│           │   │   ├── tornado>=4.1                                      Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│           │   │   └── traitlets                                         Traitlets Python configuration system
+│           │   ├── matplotlib-inline<0.2.0,>=0.1.0                       Inline Matplotlib backend for Jupyter
+│           │   │   └── traitlets                                         Traitlets Python configuration system
+│           │   ├── tornado<7.0,>=4.2                                     Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│           │   └── traitlets<6.0,>=4.1.0                                 Traitlets Python configuration system
+│           ├── ipython-genutils                                          Vestigial utilities from IPython
+│           ├── jinja2                                                    A very fast and expressive template engine.
+│           │   └── MarkupSafe>=2.0                                       Safely add untrusted strings to HTML/XML markup.
+│           ├── jupyter-client>=5.3.4                                     Jupyter protocol implementation and client libraries
+│           │   ├── entrypoints                                           Discover and load entry points from installed packages.
+│           │   ├── jupyter-core>=4.6.0                                   Jupyter core package. A base package on which Jupyter projects rely.
+│           │   │   └── traitlets                                         Traitlets Python configuration system
+│           │   ├── nest-asyncio>=1.5                                     Patch asyncio to allow nested event loops
+│           │   ├── python-dateutil>=2.1                                  Extensions to the standard Python datetime module
+│           │   │   └── six>=1.5                                          Python 2 and 3 compatibility utilities
+│           │   ├── pyzmq>=13                                             Python bindings for 0MQ
+│           │   ├── tornado>=4.1                                          Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│           │   └── traitlets                                             Traitlets Python configuration system
+│           ├── jupyter-core>=4.6.1                                       Jupyter core package. A base package on which Jupyter projects rely.
+│           │   └── traitlets                                             Traitlets Python configuration system
+│           ├── nbconvert                                                 Converting Jupyter Notebooks
+│           │   ├── bleach                                                An easy safelist-based HTML-sanitizing tool.
+│           │   │   ├── packaging                                         Core utilities for Python packages
+│           │   │   │   └── pyparsing>=2.0.2                              Python parsing module
+│           │   │   ├── six>=1.9.0                                        Python 2 and 3 compatibility utilities
+│           │   │   └── webencodings                                      Character encoding aliases for legacy web content
+│           │   ├── defusedxml                                            XML bomb protection for Python stdlib modules
+│           │   ├── entrypoints>=0.2.2                                    Discover and load entry points from installed packages.
+│           │   ├── jinja2>=2.4                                           A very fast and expressive template engine.
+│           │   │   └── MarkupSafe>=2.0                                   Safely add untrusted strings to HTML/XML markup.
+│           │   ├── jupyter-core                                          Jupyter core package. A base package on which Jupyter projects rely.
+│           │   │   └── traitlets                                         Traitlets Python configuration system
+│           │   ├── jupyterlab-pygments                                   Pygments theme using JupyterLab CSS variables
+│           │   │   └── pygments<3,>=2.4.1                                Pygments is a syntax highlighting package written in Python.
+│           │   ├── mistune<2,>=0.8.1                                     The fastest markdown parser in pure Python
+│           │   ├── nbclient<0.6.0,>=0.5.0                                A client library for executing notebooks. Formerly nbconvert's ExecutePreprocessor.
+│           │   │   ├── jupyter-client>=6.1.5                             Jupyter protocol implementation and client libraries
+│           │   │   │   ├── entrypoints                                   Discover and load entry points from installed packages.
+│           │   │   │   ├── jupyter-core>=4.6.0                           Jupyter core package. A base package on which Jupyter projects rely.
+│           │   │   │   │   └── traitlets                                 Traitlets Python configuration system
+│           │   │   │   ├── nest-asyncio>=1.5                             Patch asyncio to allow nested event loops
+│           │   │   │   ├── python-dateutil>=2.1                          Extensions to the standard Python datetime module
+│           │   │   │   │   └── six>=1.5                                  Python 2 and 3 compatibility utilities
+│           │   │   │   ├── pyzmq>=13                                     Python bindings for 0MQ
+│           │   │   │   ├── tornado>=4.1                                  Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│           │   │   │   └── traitlets                                     Traitlets Python configuration system
+│           │   │   ├── nbformat>=5.0                                     The Jupyter Notebook format
+│           │   │   │   ├── ipython-genutils                              Vestigial utilities from IPython
+│           │   │   │   ├── jsonschema!=2.5.0,>=2.4                       An implementation of JSON Schema validation for Python
+│           │   │   │   │   ├── attrs>=17.4.0                             Classes Without Boilerplate
+│           │   │   │   │   ├── pyrsistent>=0.14.0                        Persistent/Functional/Immutable data structures
+│           │   │   │   │   ├── setuptools                                Easily download, build, install, upgrade, and uninstall Python packages
+│           │   │   │   │   └── six>=1.11.0                               Python 2 and 3 compatibility utilities
+│           │   │   │   ├── jupyter-core                                  Jupyter core package. A base package on which Jupyter projects rely.
+│           │   │   │   │   └── traitlets                                 Traitlets Python configuration system
+│           │   │   │   └── traitlets>=4.1                                Traitlets Python configuration system
+│           │   │   ├── nest-asyncio                                      Patch asyncio to allow nested event loops
+│           │   │   └── traitlets>=4.2                                    Traitlets Python configuration system
+│           │   ├── nbformat>=4.4                                         The Jupyter Notebook format
+│           │   │   ├── ipython-genutils                                  Vestigial utilities from IPython
+│           │   │   ├── jsonschema!=2.5.0,>=2.4                           An implementation of JSON Schema validation for Python
+│           │   │   │   ├── attrs>=17.4.0                                 Classes Without Boilerplate
+│           │   │   │   ├── pyrsistent>=0.14.0                            Persistent/Functional/Immutable data structures
+│           │   │   │   ├── setuptools                                    Easily download, build, install, upgrade, and uninstall Python packages
+│           │   │   │   └── six>=1.11.0                                   Python 2 and 3 compatibility utilities
+│           │   │   ├── jupyter-core                                      Jupyter core package. A base package on which Jupyter projects rely.
+│           │   │   │   └── traitlets                                     Traitlets Python configuration system
+│           │   │   └── traitlets>=4.1                                    Traitlets Python configuration system
+│           │   ├── pandocfilters>=1.4.1                                  Utilities for writing pandoc filters in python
+│           │   ├── pygments>=2.4.1                                       Pygments is a syntax highlighting package written in Python.
+│           │   ├── testpath                                              Test utilities for code working with files and commands
+│           │   └── traitlets>=5.0                                        Traitlets Python configuration system
+│           ├── nbformat                                                  The Jupyter Notebook format
+│           │   ├── ipython-genutils                                      Vestigial utilities from IPython
+│           │   ├── jsonschema!=2.5.0,>=2.4                               An implementation of JSON Schema validation for Python
+│           │   │   ├── attrs>=17.4.0                                     Classes Without Boilerplate
+│           │   │   ├── pyrsistent>=0.14.0                                Persistent/Functional/Immutable data structures
+│           │   │   ├── setuptools                                        Easily download, build, install, upgrade, and uninstall Python packages
+│           │   │   └── six>=1.11.0                                       Python 2 and 3 compatibility utilities
+│           │   ├── jupyter-core                                          Jupyter core package. A base package on which Jupyter projects rely.
+│           │   │   └── traitlets                                         Traitlets Python configuration system
+│           │   └── traitlets>=4.1                                        Traitlets Python configuration system
+│           ├── prometheus-client                                         Python client for the Prometheus monitoring system.
+│           ├── pyzmq>=17                                                 Python bindings for 0MQ
+│           ├── terminado>=0.8.3                                          Tornado websocket backend for the Xterm.js Javascript terminal emulator library.
+│           │   ├── ptyprocess                                            Run a subprocess in a pseudo terminal
+│           │   └── tornado>=4                                            Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│           ├── tornado>=6.1                                              Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+│           └── traitlets>=4.2.1                                          Traitlets Python configuration system
+├── joblib                                                                Lightweight pipelining with Python functions
+├── kmodes>=0.10.1                                                        Python implementations of the k-modes and k-prototypes clustering algorithms for clustering categorical data.
+│   ├── joblib>=0.11                                                      Lightweight pipelining with Python functions
+│   ├── numpy>=1.10.4                                                     NumPy is the fundamental package for array computing with Python.
+│   ├── scikit-learn>=0.22.0                                              A set of python modules for machine learning and data mining
+│   │   ├── joblib>=0.11                                                  Lightweight pipelining with Python functions
+│   │   ├── numpy>=1.13.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── scipy>=0.19.1                                                 SciPy: Scientific Library for Python
+│   │   │   └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+│   │   └── threadpoolctl>=2.0.0                                          threadpoolctl
+│   └── scipy>=0.13.3                                                     SciPy: Scientific Library for Python
+│       └── numpy<1.23.0,>=1.16.5                                         NumPy is the fundamental package for array computing with Python.
+├── lightgbm>=2.3.1                                                       LightGBM Python Package
+│   ├── numpy                                                             NumPy is the fundamental package for array computing with Python.
+│   ├── scikit-learn!=0.22.0                                              A set of python modules for machine learning and data mining
+│   │   ├── joblib>=0.11                                                  Lightweight pipelining with Python functions
+│   │   ├── numpy>=1.13.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── scipy>=0.19.1                                                 SciPy: Scientific Library for Python
+│   │   │   └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+│   │   └── threadpoolctl>=2.0.0                                          threadpoolctl
+│   ├── scipy                                                             SciPy: Scientific Library for Python
+│   │   └── numpy<1.23.0,>=1.16.5                                         NumPy is the fundamental package for array computing with Python.
+│   └── wheel                                                             A built-package format for Python
+├── matplotlib                                                            Python plotting package
+│   ├── cycler>=0.10                                                      Composable style cycles
+│   │   └── six                                                           Python 2 and 3 compatibility utilities
+│   ├── kiwisolver>=1.0.1                                                 A fast implementation of the Cassowary constraint solver
+│   ├── numpy>=1.16                                                       NumPy is the fundamental package for array computing with Python.
+│   ├── pillow>=6.2.0                                                     Python Imaging Library (Fork)
+│   ├── pyparsing>=2.2.1                                                  Python parsing module
+│   └── python-dateutil>=2.7                                              Extensions to the standard Python datetime module
+│       └── six>=1.5                                                      Python 2 and 3 compatibility utilities
+├── mlflow                                                                MLflow: A Platform for ML Development and Productionization
+│   ├── Flask                                                             A simple framework for building complex web applications.
+│   │   ├── Jinja2>=3.0                                                   A very fast and expressive template engine.
+│   │   │   └── MarkupSafe>=2.0                                           Safely add untrusted strings to HTML/XML markup.
+│   │   ├── Werkzeug>=2.0                                                 The comprehensive WSGI web application library.
+│   │   ├── click>=7.1.2                                                  Composable command line interface toolkit
+│   │   └── itsdangerous>=2.0                                             Safely pass data to untrusted environments and back.
+│   ├── alembic<=1.4.1                                                    A database migration tool for SQLAlchemy.
+│   │   ├── Mako                                                          A super-fast templating language that borrows the  best ideas from the existing templating languages.
+│   │   │   └── MarkupSafe>=0.9.2                                         Safely add untrusted strings to HTML/XML markup.
+│   │   ├── SQLAlchemy>=1.1.0                                             Database Abstraction Library
+│   │   │   └── greenlet!=0.4.17                                          Lightweight in-process concurrent programming
+│   │   ├── python-dateutil                                               Extensions to the standard Python datetime module
+│   │   │   └── six>=1.5                                                  Python 2 and 3 compatibility utilities
+│   │   └── python-editor>=0.3                                            Programmatically open an editor, capture the result.
+│   ├── click>=7.0                                                        Composable command line interface toolkit
+│   ├── cloudpickle                                                       Extended pickling support for Python objects
+│   ├── databricks-cli>=0.8.7                                             A command line interface for Databricks
+│   │   ├── click>=6.7                                                    Composable command line interface toolkit
+│   │   ├── requests>=2.17.3                                              Python HTTP for Humans.
+│   │   │   ├── certifi>=2017.4.17                                        Python package for providing Mozilla's CA Bundle.
+│   │   │   ├── charset-normalizer~=2.0.0                                 The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.
+│   │   │   ├── idna<4,>=2.5                                              Internationalized Domain Names in Applications (IDNA)
+│   │   │   └── urllib3<1.27,>=1.21.1                                     HTTP library with thread-safe connection pooling, file post, and more.
+│   │   ├── six>=1.10.0                                                   Python 2 and 3 compatibility utilities
+│   │   └── tabulate>=0.7.7                                               Pretty-print tabular data
+│   ├── docker>=4.0.0                                                     A Python library for the Docker Engine API.
+│   │   ├── requests!=2.18.0,>=2.14.2                                     Python HTTP for Humans.
+│   │   │   ├── certifi>=2017.4.17                                        Python package for providing Mozilla's CA Bundle.
+│   │   │   ├── charset-normalizer~=2.0.0                                 The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.
+│   │   │   ├── idna<4,>=2.5                                              Internationalized Domain Names in Applications (IDNA)
+│   │   │   └── urllib3<1.27,>=1.21.1                                     HTTP library with thread-safe connection pooling, file post, and more.
+│   │   └── websocket-client>=0.32.0                                      WebSocket client for Python with low level API options
+│   ├── entrypoints                                                       Discover and load entry points from installed packages.
+│   ├── gitpython>=2.1.0                                                  GitPython is a python library used to interact with Git repositories
+│   │   ├── gitdb<5,>=4.0.1                                               Git Object Database
+│   │   │   └── smmap<5,>=3.0.1                                           A pure Python implementation of a sliding window memory map manager
+│   │   └── typing-extensions>=3.7.4.3                                    Backported and Experimental Type Hints for Python 3.5+
+│   ├── gunicorn                                                          WSGI HTTP Server for UNIX
+│   │   └── setuptools>=3.0                                               Easily download, build, install, upgrade, and uninstall Python packages
+│   ├── importlib-metadata!=4.7.0,>=3.7.0                                 Read metadata from Python packages
+│   │   └── zipp>=0.5                                                     Backport of pathlib-compatible object wrapper for zip files
+│   ├── numpy                                                             NumPy is the fundamental package for array computing with Python.
+│   ├── packaging                                                         Core utilities for Python packages
+│   │   └── pyparsing>=2.0.2                                              Python parsing module
+│   ├── pandas                                                            Powerful data structures for data analysis, time series, and statistics
+│   │   ├── numpy>=1.17.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── python-dateutil>=2.7.3                                        Extensions to the standard Python datetime module
+│   │   │   └── six>=1.5                                                  Python 2 and 3 compatibility utilities
+│   │   └── pytz>=2017.3                                                  World timezone definitions, modern and historical
+│   ├── prometheus-flask-exporter                                         Prometheus metrics exporter for Flask
+│   │   ├── flask                                                         A simple framework for building complex web applications.
+│   │   │   ├── Jinja2>=3.0                                               A very fast and expressive template engine.
+│   │   │   │   └── MarkupSafe>=2.0                                       Safely add untrusted strings to HTML/XML markup.
+│   │   │   ├── Werkzeug>=2.0                                             The comprehensive WSGI web application library.
+│   │   │   ├── click>=7.1.2                                              Composable command line interface toolkit
+│   │   │   └── itsdangerous>=2.0                                         Safely pass data to untrusted environments and back.
+│   │   └── prometheus-client                                             Python client for the Prometheus monitoring system.
+│   ├── protobuf>=3.7.0                                                   Protocol Buffers
+│   ├── pytz                                                              World timezone definitions, modern and historical
+│   ├── pyyaml>=5.1                                                       YAML parser and emitter for Python
+│   ├── querystring-parser                                                QueryString parser for Python/Django that correctly handles nested dictionaries
+│   │   └── six                                                           Python 2 and 3 compatibility utilities
+│   ├── requests>=2.17.3                                                  Python HTTP for Humans.
+│   │   ├── certifi>=2017.4.17                                            Python package for providing Mozilla's CA Bundle.
+│   │   ├── charset-normalizer~=2.0.0                                     The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.
+│   │   ├── idna<4,>=2.5                                                  Internationalized Domain Names in Applications (IDNA)
+│   │   └── urllib3<1.27,>=1.21.1                                         HTTP library with thread-safe connection pooling, file post, and more.
+│   ├── sqlalchemy                                                        Database Abstraction Library
+│   │   └── greenlet!=0.4.17                                              Lightweight in-process concurrent programming
+│   └── sqlparse>=0.3.1                                                   A non-validating SQL parser.
+├── mlxtend>=0.17.0                                                       Machine Learning Library Extensions
+│   ├── joblib>=0.13.2                                                    Lightweight pipelining with Python functions
+│   ├── matplotlib>=3.0.0                                                 Python plotting package
+│   │   ├── cycler>=0.10                                                  Composable style cycles
+│   │   │   └── six                                                       Python 2 and 3 compatibility utilities
+│   │   ├── kiwisolver>=1.0.1                                             A fast implementation of the Cassowary constraint solver
+│   │   ├── numpy>=1.16                                                   NumPy is the fundamental package for array computing with Python.
+│   │   ├── pillow>=6.2.0                                                 Python Imaging Library (Fork)
+│   │   ├── pyparsing>=2.2.1                                              Python parsing module
+│   │   └── python-dateutil>=2.7                                          Extensions to the standard Python datetime module
+│   │       └── six>=1.5                                                  Python 2 and 3 compatibility utilities
+│   ├── numpy>=1.16.2                                                     NumPy is the fundamental package for array computing with Python.
+│   ├── pandas>=0.24.2                                                    Powerful data structures for data analysis, time series, and statistics
+│   │   ├── numpy>=1.17.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── python-dateutil>=2.7.3                                        Extensions to the standard Python datetime module
+│   │   │   └── six>=1.5                                                  Python 2 and 3 compatibility utilities
+│   │   └── pytz>=2017.3                                                  World timezone definitions, modern and historical
+│   ├── scikit-learn>=0.20.3                                              A set of python modules for machine learning and data mining
+│   │   ├── joblib>=0.11                                                  Lightweight pipelining with Python functions
+│   │   ├── numpy>=1.13.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── scipy>=0.19.1                                                 SciPy: Scientific Library for Python
+│   │   │   └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+│   │   └── threadpoolctl>=2.0.0                                          threadpoolctl
+│   ├── scipy>=1.2.1                                                      SciPy: Scientific Library for Python
+│   │   └── numpy<1.23.0,>=1.16.5                                         NumPy is the fundamental package for array computing with Python.
+│   └── setuptools                                                        Easily download, build, install, upgrade, and uninstall Python packages
+├── nltk                                                                  Natural Language Toolkit
+│   ├── click                                                             Composable command line interface toolkit
+│   ├── joblib                                                            Lightweight pipelining with Python functions
+│   ├── regex                                                             Alternative regular expression module, to replace re.
+│   └── tqdm                                                              Fast, Extensible Progress Meter
+├── numpy==1.19.5                                                         NumPy is the fundamental package for array computing with Python.
+├── pandas                                                                Powerful data structures for data analysis, time series, and statistics
+│   ├── numpy>=1.17.3                                                     NumPy is the fundamental package for array computing with Python.
+│   ├── python-dateutil>=2.7.3                                            Extensions to the standard Python datetime module
+│   │   └── six>=1.5                                                      Python 2 and 3 compatibility utilities
+│   └── pytz>=2017.3                                                      World timezone definitions, modern and historical
+├── pandas-profiling>=2.8.0                                               Generate profile report for pandas DataFrame
+│   ├── PyYAML>=5.0.0                                                     YAML parser and emitter for Python
+│   ├── htmlmin>=0.1.12                                                   An HTML Minifier
+│   ├── jinja2>=2.11.1                                                    A very fast and expressive template engine.
+│   │   └── MarkupSafe>=2.0                                               Safely add untrusted strings to HTML/XML markup.
+│   ├── joblib                                                            Lightweight pipelining with Python functions
+│   ├── matplotlib>=3.2.0                                                 Python plotting package
+│   │   ├── cycler>=0.10                                                  Composable style cycles
+│   │   │   └── six                                                       Python 2 and 3 compatibility utilities
+│   │   ├── kiwisolver>=1.0.1                                             A fast implementation of the Cassowary constraint solver
+│   │   ├── numpy>=1.16                                                   NumPy is the fundamental package for array computing with Python.
+│   │   ├── pillow>=6.2.0                                                 Python Imaging Library (Fork)
+│   │   ├── pyparsing>=2.2.1                                              Python parsing module
+│   │   └── python-dateutil>=2.7                                          Extensions to the standard Python datetime module
+│   │       └── six>=1.5                                                  Python 2 and 3 compatibility utilities
+│   ├── missingno>=0.4.2                                                  Missing data visualization module for Python.
+│   │   ├── matplotlib                                                    Python plotting package
+│   │   │   ├── cycler>=0.10                                              Composable style cycles
+│   │   │   │   └── six                                                   Python 2 and 3 compatibility utilities
+│   │   │   ├── kiwisolver>=1.0.1                                         A fast implementation of the Cassowary constraint solver
+│   │   │   ├── numpy>=1.16                                               NumPy is the fundamental package for array computing with Python.
+│   │   │   ├── pillow>=6.2.0                                             Python Imaging Library (Fork)
+│   │   │   ├── pyparsing>=2.2.1                                          Python parsing module
+│   │   │   └── python-dateutil>=2.7                                      Extensions to the standard Python datetime module
+│   │   │       └── six>=1.5                                              Python 2 and 3 compatibility utilities
+│   │   ├── numpy                                                         NumPy is the fundamental package for array computing with Python.
+│   │   ├── scipy                                                         SciPy: Scientific Library for Python
+│   │   │   └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+│   │   └── seaborn                                                       seaborn: statistical data visualization
+│   │       ├── matplotlib>=2.2                                           Python plotting package
+│   │       │   ├── cycler>=0.10                                          Composable style cycles
+│   │       │   │   └── six                                               Python 2 and 3 compatibility utilities
+│   │       │   ├── kiwisolver>=1.0.1                                     A fast implementation of the Cassowary constraint solver
+│   │       │   ├── numpy>=1.16                                           NumPy is the fundamental package for array computing with Python.
+│   │       │   ├── pillow>=6.2.0                                         Python Imaging Library (Fork)
+│   │       │   ├── pyparsing>=2.2.1                                      Python parsing module
+│   │       │   └── python-dateutil>=2.7                                  Extensions to the standard Python datetime module
+│   │       │       └── six>=1.5                                          Python 2 and 3 compatibility utilities
+│   │       ├── numpy>=1.15                                               NumPy is the fundamental package for array computing with Python.
+│   │       ├── pandas>=0.23                                              Powerful data structures for data analysis, time series, and statistics
+│   │       │   ├── numpy>=1.17.3                                         NumPy is the fundamental package for array computing with Python.
+│   │       │   ├── python-dateutil>=2.7.3                                Extensions to the standard Python datetime module
+│   │       │   │   └── six>=1.5                                          Python 2 and 3 compatibility utilities
+│   │       │   └── pytz>=2017.3                                          World timezone definitions, modern and historical
+│   │       └── scipy>=1.0                                                SciPy: Scientific Library for Python
+│   │           └── numpy<1.23.0,>=1.16.5                                 NumPy is the fundamental package for array computing with Python.
+│   ├── numpy>=1.16.0                                                     NumPy is the fundamental package for array computing with Python.
+│   ├── pandas!=1.0.0,!=1.0.1,!=1.0.2,!=1.1.0,>=0.25.3                    Powerful data structures for data analysis, time series, and statistics
+│   │   ├── numpy>=1.17.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── python-dateutil>=2.7.3                                        Extensions to the standard Python datetime module
+│   │   │   └── six>=1.5                                                  Python 2 and 3 compatibility utilities
+│   │   └── pytz>=2017.3                                                  World timezone definitions, modern and historical
+│   ├── phik>=0.11.1                                                      Phi_K correlation analyzer library
+│   │   ├── joblib>=0.14.1                                                Lightweight pipelining with Python functions
+│   │   ├── matplotlib>=2.2.3                                             Python plotting package
+│   │   │   ├── cycler>=0.10                                              Composable style cycles
+│   │   │   │   └── six                                                   Python 2 and 3 compatibility utilities
+│   │   │   ├── kiwisolver>=1.0.1                                         A fast implementation of the Cassowary constraint solver
+│   │   │   ├── numpy>=1.16                                               NumPy is the fundamental package for array computing with Python.
+│   │   │   ├── pillow>=6.2.0                                             Python Imaging Library (Fork)
+│   │   │   ├── pyparsing>=2.2.1                                          Python parsing module
+│   │   │   └── python-dateutil>=2.7                                      Extensions to the standard Python datetime module
+│   │   │       └── six>=1.5                                              Python 2 and 3 compatibility utilities
+│   │   ├── numpy>=1.18.0                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── pandas>=0.25.1                                                Powerful data structures for data analysis, time series, and statistics
+│   │   │   ├── numpy>=1.17.3                                             NumPy is the fundamental package for array computing with Python.
+│   │   │   ├── python-dateutil>=2.7.3                                    Extensions to the standard Python datetime module
+│   │   │   │   └── six>=1.5                                              Python 2 and 3 compatibility utilities
+│   │   │   └── pytz>=2017.3                                              World timezone definitions, modern and historical
+│   │   └── scipy>=1.5.2                                                  SciPy: Scientific Library for Python
+│   │       └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+│   ├── pydantic>=1.8.1                                                   Data validation and settings management using python 3.6 type hinting
+│   │   └── typing-extensions>=3.7.4.3                                    Backported and Experimental Type Hints for Python 3.5+
+│   ├── requests>=2.24.0                                                  Python HTTP for Humans.
+│   │   ├── certifi>=2017.4.17                                            Python package for providing Mozilla's CA Bundle.
+│   │   ├── charset-normalizer~=2.0.0                                     The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.
+│   │   ├── idna<4,>=2.5                                                  Internationalized Domain Names in Applications (IDNA)
+│   │   └── urllib3<1.27,>=1.21.1                                         HTTP library with thread-safe connection pooling, file post, and more.
+│   ├── scipy>=1.4.1                                                      SciPy: Scientific Library for Python
+│   │   └── numpy<1.23.0,>=1.16.5                                         NumPy is the fundamental package for array computing with Python.
+│   ├── seaborn>=0.10.1                                                   seaborn: statistical data visualization
+│   │   ├── matplotlib>=2.2                                               Python plotting package
+│   │   │   ├── cycler>=0.10                                              Composable style cycles
+│   │   │   │   └── six                                                   Python 2 and 3 compatibility utilities
+│   │   │   ├── kiwisolver>=1.0.1                                         A fast implementation of the Cassowary constraint solver
+│   │   │   ├── numpy>=1.16                                               NumPy is the fundamental package for array computing with Python.
+│   │   │   ├── pillow>=6.2.0                                             Python Imaging Library (Fork)
+│   │   │   ├── pyparsing>=2.2.1                                          Python parsing module
+│   │   │   └── python-dateutil>=2.7                                      Extensions to the standard Python datetime module
+│   │   │       └── six>=1.5                                              Python 2 and 3 compatibility utilities
+│   │   ├── numpy>=1.15                                                   NumPy is the fundamental package for array computing with Python.
+│   │   ├── pandas>=0.23                                                  Powerful data structures for data analysis, time series, and statistics
+│   │   │   ├── numpy>=1.17.3                                             NumPy is the fundamental package for array computing with Python.
+│   │   │   ├── python-dateutil>=2.7.3                                    Extensions to the standard Python datetime module
+│   │   │   │   └── six>=1.5                                              Python 2 and 3 compatibility utilities
+│   │   │   └── pytz>=2017.3                                              World timezone definitions, modern and historical
+│   │   └── scipy>=1.0                                                    SciPy: Scientific Library for Python
+│   │       └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+│   ├── tangled-up-in-unicode==0.1.0                                      Access to the Unicode Character Database (UCD)
+│   ├── tqdm>=4.48.2                                                      Fast, Extensible Progress Meter
+│   └── visions[type_image_path]==0.7.1                                   Visions
+│       ├── Pillow                                                        Python Imaging Library (Fork)
+│       ├── attrs>=19.3.0                                                 Classes Without Boilerplate
+│       ├── bottleneck                                                    Fast NumPy array functions written in C
+│       │   └── numpy                                                     NumPy is the fundamental package for array computing with Python.
+│       ├── imagehash                                                     Image Hashing library
+│       │   ├── PyWavelets                                                PyWavelets, wavelet transform module
+│       │   │   └── numpy>=1.13.3                                         NumPy is the fundamental package for array computing with Python.
+│       │   ├── numpy                                                     NumPy is the fundamental package for array computing with Python.
+│       │   ├── pillow                                                    Python Imaging Library (Fork)
+│       │   ├── scipy                                                     SciPy: Scientific Library for Python
+│       │   │   └── numpy<1.23.0,>=1.16.5                                 NumPy is the fundamental package for array computing with Python.
+│       │   └── six                                                       Python 2 and 3 compatibility utilities
+│       ├── multimethod==1.4                                              Multiple argument dispatching.
+│       ├── networkx>=2.4                                                 Python package for creating and manipulating graphs and networks
+│       ├── numpy                                                         NumPy is the fundamental package for array computing with Python.
+│       ├── pandas>=0.25.3                                                Powerful data structures for data analysis, time series, and statistics
+│       │   ├── numpy>=1.17.3                                             NumPy is the fundamental package for array computing with Python.
+│       │   ├── python-dateutil>=2.7.3                                    Extensions to the standard Python datetime module
+│       │   │   └── six>=1.5                                              Python 2 and 3 compatibility utilities
+│       │   └── pytz>=2017.3                                              World timezone definitions, modern and historical
+│       └── tangled-up-in-unicode>=0.0.4                                  Access to the Unicode Character Database (UCD)
+├── plotly>=4.4.1                                                         An open-source, interactive data visualization library for Python
+│   ├── six                                                               Python 2 and 3 compatibility utilities
+│   └── tenacity>=6.2.0                                                   Retry code until it succeeds
+├── pyLDAvis                                                              Interactive topic model visualization. Port of the R package.
+│   ├── funcy                                                             A fancy and practical functional tools
+│   ├── future                                                            Clean single-source support for Python 3 and 2
+│   ├── gensim                                                            Python framework for fast Vector Space Modelling
+│   │   ├── numpy>=1.17.0                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── scipy>=0.18.1                                                 SciPy: Scientific Library for Python
+│   │   │   └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+│   │   └── smart-open>=1.8.1                                             Utils for streaming large files (S3, HDFS, GCS, Azure Blob Storage, gzip, bz2...)
+│   ├── jinja2                                                            A very fast and expressive template engine.
+│   │   └── MarkupSafe>=2.0                                               Safely add untrusted strings to HTML/XML markup.
+│   ├── joblib                                                            Lightweight pipelining with Python functions
+│   ├── numexpr                                                           Fast numerical expression evaluator for NumPy
+│   │   └── numpy>=1.7                                                    NumPy is the fundamental package for array computing with Python.
+│   ├── numpy>=1.20.0                                                     NumPy is the fundamental package for array computing with Python.
+│   ├── pandas>=1.2.0                                                     Powerful data structures for data analysis, time series, and statistics
+│   │   ├── numpy>=1.17.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── python-dateutil>=2.7.3                                        Extensions to the standard Python datetime module
+│   │   │   └── six>=1.5                                                  Python 2 and 3 compatibility utilities
+│   │   └── pytz>=2017.3                                                  World timezone definitions, modern and historical
+│   ├── scikit-learn                                                      A set of python modules for machine learning and data mining
+│   │   ├── joblib>=0.11                                                  Lightweight pipelining with Python functions
+│   │   ├── numpy>=1.13.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── scipy>=0.19.1                                                 SciPy: Scientific Library for Python
+│   │   │   └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+│   │   └── threadpoolctl>=2.0.0                                          threadpoolctl
+│   ├── scipy                                                             SciPy: Scientific Library for Python
+│   │   └── numpy<1.23.0,>=1.16.5                                         NumPy is the fundamental package for array computing with Python.
+│   ├── setuptools                                                        Easily download, build, install, upgrade, and uninstall Python packages
+│   └── sklearn                                                           A set of python modules for machine learning and data mining
+│       └── scikit-learn                                                  A set of python modules for machine learning and data mining
+│           ├── joblib>=0.11                                              Lightweight pipelining with Python functions
+│           ├── numpy>=1.13.3                                             NumPy is the fundamental package for array computing with Python.
+│           ├── scipy>=0.19.1                                             SciPy: Scientific Library for Python
+│           │   └── numpy<1.23.0,>=1.16.5                                 NumPy is the fundamental package for array computing with Python.
+│           └── threadpoolctl>=2.0.0                                      threadpoolctl
+├── pyod                                                                  A Python Toolbox for Scalable Outlier Detection (Anomaly Detection)
+│   ├── joblib                                                            Lightweight pipelining with Python functions
+│   ├── matplotlib                                                        Python plotting package
+│   │   ├── cycler>=0.10                                                  Composable style cycles
+│   │   │   └── six                                                       Python 2 and 3 compatibility utilities
+│   │   ├── kiwisolver>=1.0.1                                             A fast implementation of the Cassowary constraint solver
+│   │   ├── numpy>=1.16                                                   NumPy is the fundamental package for array computing with Python.
+│   │   ├── pillow>=6.2.0                                                 Python Imaging Library (Fork)
+│   │   ├── pyparsing>=2.2.1                                              Python parsing module
+│   │   └── python-dateutil>=2.7                                          Extensions to the standard Python datetime module
+│   │       └── six>=1.5                                                  Python 2 and 3 compatibility utilities
+│   ├── numba>=0.35                                                       compiling Python code using LLVM
+│   │   ├── llvmlite<0.38,>=0.37.0rc1                                     lightweight wrapper around basic LLVM functionality
+│   │   ├── numpy<1.21,>=1.17                                             NumPy is the fundamental package for array computing with Python.
+│   │   └── setuptools                                                    Easily download, build, install, upgrade, and uninstall Python packages
+│   ├── numpy>=1.13                                                       NumPy is the fundamental package for array computing with Python.
+│   ├── scikit-learn>=0.20.0                                              A set of python modules for machine learning and data mining
+│   │   ├── joblib>=0.11                                                  Lightweight pipelining with Python functions
+│   │   ├── numpy>=1.13.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── scipy>=0.19.1                                                 SciPy: Scientific Library for Python
+│   │   │   └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+│   │   └── threadpoolctl>=2.0.0                                          threadpoolctl
+│   ├── scipy>=1.3.1                                                      SciPy: Scientific Library for Python
+│   │   └── numpy<1.23.0,>=1.16.5                                         NumPy is the fundamental package for array computing with Python.
+│   ├── six                                                               Python 2 and 3 compatibility utilities
+│   └── statsmodels                                                       Statistical computations and models for Python
+│       ├── numpy>=1.15                                                   NumPy is the fundamental package for array computing with Python.
+│       ├── pandas>=0.21                                                  Powerful data structures for data analysis, time series, and statistics
+│       │   ├── numpy>=1.17.3                                             NumPy is the fundamental package for array computing with Python.
+│       │   ├── python-dateutil>=2.7.3                                    Extensions to the standard Python datetime module
+│       │   │   └── six>=1.5                                              Python 2 and 3 compatibility utilities
+│       │   └── pytz>=2017.3                                              World timezone definitions, modern and historical
+│       ├── patsy>=0.5                                                    A Python package for describing statistical models and for building design matrices.
+│       │   ├── numpy>=1.4                                                NumPy is the fundamental package for array computing with Python.
+│       │   └── six                                                       Python 2 and 3 compatibility utilities
+│       └── scipy>=1.1                                                    SciPy: Scientific Library for Python
+│           └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+├── scikit-learn==0.23.2                                                  A set of python modules for machine learning and data mining
+│   ├── joblib>=0.11                                                      Lightweight pipelining with Python functions
+│   ├── numpy>=1.13.3                                                     NumPy is the fundamental package for array computing with Python.
+│   ├── scipy>=0.19.1                                                     SciPy: Scientific Library for Python
+│   │   └── numpy<1.23.0,>=1.16.5                                         NumPy is the fundamental package for array computing with Python.
+│   └── threadpoolctl>=2.0.0                                              threadpoolctl
+├── scikit-plot                                                           An intuitive library to add plotting functionality to scikit-learn objects.
+│   ├── joblib>=0.10                                                      Lightweight pipelining with Python functions
+│   ├── matplotlib>=1.4.0                                                 Python plotting package
+│   │   ├── cycler>=0.10                                                  Composable style cycles
+│   │   │   └── six                                                       Python 2 and 3 compatibility utilities
+│   │   ├── kiwisolver>=1.0.1                                             A fast implementation of the Cassowary constraint solver
+│   │   ├── numpy>=1.16                                                   NumPy is the fundamental package for array computing with Python.
+│   │   ├── pillow>=6.2.0                                                 Python Imaging Library (Fork)
+│   │   ├── pyparsing>=2.2.1                                              Python parsing module
+│   │   └── python-dateutil>=2.7                                          Extensions to the standard Python datetime module
+│   │       └── six>=1.5                                                  Python 2 and 3 compatibility utilities
+│   ├── scikit-learn>=0.18                                                A set of python modules for machine learning and data mining
+│   │   ├── joblib>=0.11                                                  Lightweight pipelining with Python functions
+│   │   ├── numpy>=1.13.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── scipy>=0.19.1                                                 SciPy: Scientific Library for Python
+│   │   │   └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+│   │   └── threadpoolctl>=2.0.0                                          threadpoolctl
+│   └── scipy>=0.9                                                        SciPy: Scientific Library for Python
+│       └── numpy<1.23.0,>=1.16.5                                         NumPy is the fundamental package for array computing with Python.
+├── scipy<=1.5.4                                                          SciPy: Scientific Library for Python
+│   └── numpy>=1.14.5                                                     NumPy is the fundamental package for array computing with Python.
+├── seaborn                                                               seaborn: statistical data visualization
+│   ├── matplotlib>=2.2                                                   Python plotting package
+│   │   ├── cycler>=0.10                                                  Composable style cycles
+│   │   │   └── six                                                       Python 2 and 3 compatibility utilities
+│   │   ├── kiwisolver>=1.0.1                                             A fast implementation of the Cassowary constraint solver
+│   │   ├── numpy>=1.16                                                   NumPy is the fundamental package for array computing with Python.
+│   │   ├── pillow>=6.2.0                                                 Python Imaging Library (Fork)
+│   │   ├── pyparsing>=2.2.1                                              Python parsing module
+│   │   └── python-dateutil>=2.7                                          Extensions to the standard Python datetime module
+│   │       └── six>=1.5                                                  Python 2 and 3 compatibility utilities
+│   ├── numpy>=1.15                                                       NumPy is the fundamental package for array computing with Python.
+│   ├── pandas>=0.23                                                      Powerful data structures for data analysis, time series, and statistics
+│   │   ├── numpy>=1.17.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── python-dateutil>=2.7.3                                        Extensions to the standard Python datetime module
+│   │   │   └── six>=1.5                                                  Python 2 and 3 compatibility utilities
+│   │   └── pytz>=2017.3                                                  World timezone definitions, modern and historical
+│   └── scipy>=1.0                                                        SciPy: Scientific Library for Python
+│       └── numpy<1.23.0,>=1.16.5                                         NumPy is the fundamental package for array computing with Python.
+├── spacy<2.4.0                                                           Industrial-strength Natural Language Processing (NLP) in Python
+│   ├── blis<0.8.0,>=0.4.0                                                The Blis BLAS-like linear algebra library, as a self-contained C-extension.
+│   │   └── numpy>=1.15.0                                                 NumPy is the fundamental package for array computing with Python.
+│   ├── catalogue<1.1.0,>=0.0.7                                           Super lightweight function registries for your library
+│   ├── cymem<2.1.0,>=2.0.2                                               Manage calls to calloc/free through Cython
+│   ├── murmurhash<1.1.0,>=0.28.0                                         Cython bindings for MurmurHash
+│   ├── numpy>=1.15.0                                                     NumPy is the fundamental package for array computing with Python.
+│   ├── plac<1.2.0,>=0.9.6                                                The smartest command line arguments parser in the world
+│   ├── preshed<3.1.0,>=3.0.2                                             Cython hash table that trusts the keys are pre-hashed
+│   │   ├── cymem<2.1.0,>=2.0.2                                           Manage calls to calloc/free through Cython
+│   │   └── murmurhash<1.1.0,>=0.28.0                                     Cython bindings for MurmurHash
+│   ├── requests<3.0.0,>=2.13.0                                           Python HTTP for Humans.
+│   │   ├── certifi>=2017.4.17                                            Python package for providing Mozilla's CA Bundle.
+│   │   ├── charset-normalizer~=2.0.0                                     The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.
+│   │   ├── idna<4,>=2.5                                                  Internationalized Domain Names in Applications (IDNA)
+│   │   └── urllib3<1.27,>=1.21.1                                         HTTP library with thread-safe connection pooling, file post, and more.
+│   ├── setuptools                                                        Easily download, build, install, upgrade, and uninstall Python packages
+│   ├── srsly<1.1.0,>=1.0.2                                               Modern high-performance serialization utilities for Python
+│   ├── thinc<7.5.0,>=7.4.1                                               Practical Machine Learning for NLP
+│   │   ├── blis<0.8.0,>=0.4.0                                            The Blis BLAS-like linear algebra library, as a self-contained C-extension.
+│   │   │   └── numpy>=1.15.0                                             NumPy is the fundamental package for array computing with Python.
+│   │   ├── catalogue<1.1.0,>=0.0.7                                       Super lightweight function registries for your library
+│   │   ├── cymem<2.1.0,>=2.0.2                                           Manage calls to calloc/free through Cython
+│   │   ├── murmurhash<1.1.0,>=0.28.0                                     Cython bindings for MurmurHash
+│   │   ├── numpy>=1.15.0                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── plac<1.2.0,>=0.9.6                                            The smartest command line arguments parser in the world
+│   │   ├── preshed<3.1.0,>=1.0.1                                         Cython hash table that trusts the keys are pre-hashed
+│   │   │   ├── cymem<2.1.0,>=2.0.2                                       Manage calls to calloc/free through Cython
+│   │   │   └── murmurhash<1.1.0,>=0.28.0                                 Cython bindings for MurmurHash
+│   │   ├── srsly<1.1.0,>=0.0.6                                           Modern high-performance serialization utilities for Python
+│   │   ├── tqdm<5.0.0,>=4.10.0                                           Fast, Extensible Progress Meter
+│   │   └── wasabi<1.1.0,>=0.0.9                                          A lightweight console printing and formatting toolkit
+│   ├── tqdm<5.0.0,>=4.38.0                                               Fast, Extensible Progress Meter
+│   └── wasabi<1.1.0,>=0.4.0                                              A lightweight console printing and formatting toolkit
+├── textblob                                                              Simple, Pythonic text processing. Sentiment analysis, part-of-speech tagging, noun phrase parsing, and more.
+│   └── nltk>=3.1                                                         Natural Language Toolkit
+│       ├── click                                                         Composable command line interface toolkit
+│       ├── joblib                                                        Lightweight pipelining with Python functions
+│       ├── regex                                                         Alternative regular expression module, to replace re.
+│       └── tqdm                                                          Fast, Extensible Progress Meter
+├── umap-learn                                                            Uniform Manifold Approximation and Projection
+│   ├── numba>=0.49                                                       compiling Python code using LLVM
+│   │   ├── llvmlite<0.38,>=0.37.0rc1                                     lightweight wrapper around basic LLVM functionality
+│   │   ├── numpy<1.21,>=1.17                                             NumPy is the fundamental package for array computing with Python.
+│   │   └── setuptools                                                    Easily download, build, install, upgrade, and uninstall Python packages
+│   ├── numpy>=1.17                                                       NumPy is the fundamental package for array computing with Python.
+│   ├── pynndescent>=0.5                                                  Nearest Neighbor Descent
+│   │   ├── joblib>=0.11                                                  Lightweight pipelining with Python functions
+│   │   ├── llvmlite>=0.30                                                lightweight wrapper around basic LLVM functionality
+│   │   ├── numba>=0.51.2                                                 compiling Python code using LLVM
+│   │   │   ├── llvmlite<0.38,>=0.37.0rc1                                 lightweight wrapper around basic LLVM functionality
+│   │   │   ├── numpy<1.21,>=1.17                                         NumPy is the fundamental package for array computing with Python.
+│   │   │   └── setuptools                                                Easily download, build, install, upgrade, and uninstall Python packages
+│   │   ├── scikit-learn>=0.18                                            A set of python modules for machine learning and data mining
+│   │   │   ├── joblib>=0.11                                              Lightweight pipelining with Python functions
+│   │   │   ├── numpy>=1.13.3                                             NumPy is the fundamental package for array computing with Python.
+│   │   │   ├── scipy>=0.19.1                                             SciPy: Scientific Library for Python
+│   │   │   │   └── numpy<1.23.0,>=1.16.5                                 NumPy is the fundamental package for array computing with Python.
+│   │   │   └── threadpoolctl>=2.0.0                                      threadpoolctl
+│   │   └── scipy>=1.0                                                    SciPy: Scientific Library for Python
+│   │       └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+│   ├── scikit-learn>=0.22                                                A set of python modules for machine learning and data mining
+│   │   ├── joblib>=0.11                                                  Lightweight pipelining with Python functions
+│   │   ├── numpy>=1.13.3                                                 NumPy is the fundamental package for array computing with Python.
+│   │   ├── scipy>=0.19.1                                                 SciPy: Scientific Library for Python
+│   │   │   └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+│   │   └── threadpoolctl>=2.0.0                                          threadpoolctl
+│   └── scipy>=1.0                                                        SciPy: Scientific Library for Python
+│       └── numpy<1.23.0,>=1.16.5                                         NumPy is the fundamental package for array computing with Python.
+├── wordcloud                                                             A little word cloud generator
+│   ├── matplotlib                                                        Python plotting package
+│   │   ├── cycler>=0.10                                                  Composable style cycles
+│   │   │   └── six                                                       Python 2 and 3 compatibility utilities
+│   │   ├── kiwisolver>=1.0.1                                             A fast implementation of the Cassowary constraint solver
+│   │   ├── numpy>=1.16                                                   NumPy is the fundamental package for array computing with Python.
+│   │   ├── pillow>=6.2.0                                                 Python Imaging Library (Fork)
+│   │   ├── pyparsing>=2.2.1                                              Python parsing module
+│   │   └── python-dateutil>=2.7                                          Extensions to the standard Python datetime module
+│   │       └── six>=1.5                                                  Python 2 and 3 compatibility utilities
+│   ├── numpy>=1.6.1                                                      NumPy is the fundamental package for array computing with Python.
+│   └── pillow                                                            Python Imaging Library (Fork)
+└── yellowbrick>=1.0.1                                                    A suite of visual analysis and diagnostic tools for machine learning.
+    ├── cycler>=0.10.0                                                    Composable style cycles
+    │   └── six                                                           Python 2 and 3 compatibility utilities
+    ├── matplotlib!=3.0.0,>=2.0.2                                         Python plotting package
+    │   ├── cycler>=0.10                                                  Composable style cycles
+    │   │   └── six                                                       Python 2 and 3 compatibility utilities
+    │   ├── kiwisolver>=1.0.1                                             A fast implementation of the Cassowary constraint solver
+    │   ├── numpy>=1.16                                                   NumPy is the fundamental package for array computing with Python.
+    │   ├── pillow>=6.2.0                                                 Python Imaging Library (Fork)
+    │   ├── pyparsing>=2.2.1                                              Python parsing module
+    │   └── python-dateutil>=2.7                                          Extensions to the standard Python datetime module
+    │       └── six>=1.5                                                  Python 2 and 3 compatibility utilities
+    ├── numpy<1.20,>=1.16.0                                               NumPy is the fundamental package for array computing with Python.
+    ├── scikit-learn>=0.20                                                A set of python modules for machine learning and data mining
+    │   ├── joblib>=0.11                                                  Lightweight pipelining with Python functions
+    │   ├── numpy>=1.13.3                                                 NumPy is the fundamental package for array computing with Python.
+    │   ├── scipy>=0.19.1                                                 SciPy: Scientific Library for Python
+    │   │   └── numpy<1.23.0,>=1.16.5                                     NumPy is the fundamental package for array computing with Python.
+    │   └── threadpoolctl>=2.0.0                                          threadpoolctl
+    └── scipy>=1.0.0                                                      SciPy: Scientific Library for Python
+        └── numpy<1.23.0,>=1.16.5                                         NumPy is the fundamental package for array computing with Python.
